@@ -1,5 +1,6 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2';
+import { BsThreeDots } from "react-icons/bs";
 
 function Chart() {
   
@@ -38,7 +39,17 @@ function Chart() {
   };
   return (
     <div>
+      <div className="card shadow border-0" style={{height: 'auto',width: '300px'}}>
+        <div className="card-body">
+      <ul class="list-group ">
+      <li class="list-group-item border-0">Open Position By Department   <BsThreeDots className="ml-3" /></li>
+      </ul>
+      <div className="card-body">
       <Doughnut data={data} />
+    </div>
+    
+    </div>
+    </div>
     </div>
   )
 }
